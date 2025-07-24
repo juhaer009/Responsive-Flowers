@@ -28,6 +28,22 @@
     text-decoration: none;
 }
 
+/* banner related styles */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 120px;
+}
+
+.banner-container h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 20px;
+    margin-top: 135px;
+}
+
 
 /* responsive designs */
 
@@ -40,4 +56,19 @@
     .dlt{
         display: none;
     }
+
+    /* responsive banner */
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-container img {
+        order: -1;
+    }
+
+    .banner-container h3 {
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+
 }
