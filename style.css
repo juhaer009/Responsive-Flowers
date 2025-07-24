@@ -1,0 +1,43 @@
+/* shared styles */
+.bold-txt {
+    color: black;
+    font-weight: bold;
+} 
+
+.light-txt {
+    color: #8987A1;
+}
+
+
+/* navbar related styles */
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    gap: 590px;
+    margin-top: 40px;
+
+}
+
+.nav-item {
+    display: flex;
+    gap: 48px;
+    margin-top: 30px;
+}
+
+.nav-item .nav-link a {
+    text-decoration: none;
+}
+
+
+/* responsive designs */
+
+@media screen and (max-width: 576px){
+    /* responsive navbar  */
+    .navbar-container{
+        gap: 185px;
+    }
+
+    .dlt{
+        display: none;
+    }
+}
