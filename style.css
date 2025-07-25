@@ -116,6 +116,103 @@ body {
     margin-top: 20px;
 }
 
+/* latest deals related styles */
+.latest-deals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-deals-container {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+}
+
+.zabo {
+    grid-row: span 2;
+    position: relative;
+}
+
+.bloom {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/deal-bloom.png');
+    /* background-image: linear-gradient(rgba(130, 122, 122, 0.4),rgba(145, 136, 136, 0.4)); */
+    width: 360px;
+    height: 170px;
+    background-size: cover;
+    border-radius: 20px;
+    padding-left:20px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.ana {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/deal-ana.png');
+    /* background-image: linear-gradient(rgba(130, 122, 122, 0.4),rgba(145, 136, 136, 0.4)); */
+    width: 360px;
+    height: 175px;
+    border-radius: 20px;
+    background-size: cover;
+    padding-left:20px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.bloom h2, .bloom p, .ana h2, .ana p {
+    color: #F5F7FE;
+}
+
+.bloom p, .ana p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.bloom h2, .ana h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.zabo {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/deal-zabo.png');
+    /* background-image: linear-gradient(rgba(130, 122, 122, 0.4),rgba(145, 136, 136, 0.4)); */
+    width: 750px;
+    height: 423px;
+    background-size: cover;
+    border-radius: 20px;
+    padding-left:20px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+/* #deal-img {
+    background-image: linear-gradient(black,black);
+    border: none;
+    border-radius: 22px;
+    position: relative;
+    z-index: -1;
+} */
+
+.zabo h2 {
+    position: absolute;
+    top: 130px;
+    left: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.zabo p {
+    position: absolute;
+    top: 190px;
+    left: 320px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+}
+
 /* responsive designs */
 
 @media screen and (max-width: 576px){
