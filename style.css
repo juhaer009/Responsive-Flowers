@@ -84,6 +84,37 @@ body {
     height: 50px;
 }
 
+/* plants lover related styles */
+.plants-lover-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 210px;
+}
+
+.plants-lover-left {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    width: 286px;
+    left: 347px;
+    bottom: 438px;
+}
+
+.plants-lover-right h3 {
+    font-size: 3.1rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 20px;
+}
+
+.plants-lover-right li {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
 
 /* responsive designs */
 
@@ -120,6 +151,29 @@ body {
         width: auto;
         margin-left: 10px;
     }
-    
+
+    /* responsive plants lover section */
+
+    .plants-lover-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 18px;
+    }
+
+    .plants-lover-right h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 16px;
+    }
+
+    .brk {
+        display: none;
+    }
+
+    .badge {
+        display: none;
+    }
 
 }
