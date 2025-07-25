@@ -121,6 +121,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
 }
 
 .latest-deals-container {
@@ -147,7 +148,7 @@ body {
 }
 
 .ana {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/deal-ana.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/deal-ana.png');
     /* background-image: linear-gradient(rgba(130, 122, 122, 0.4),rgba(145, 136, 136, 0.4)); */
     width: 360px;
     height: 175px;
@@ -158,24 +159,29 @@ body {
     text-align: center;
 }
 
-.bloom h2, .bloom p, .ana h2, .ana p {
+.bloom h2, 
+.bloom p, 
+.ana h2, 
+.ana p {
     color: #F5F7FE;
 }
 
-.bloom p, .ana p {
+.bloom p, 
+.ana p {
     font-weight: 600;
     font-size: 1.2rem;
     text-decoration: underline;
 }
 
-.bloom h2, .ana h2 {
+.bloom h2, 
+.ana h2 {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 
 .zabo {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/deal-zabo.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/deal-zabo.png');
     /* background-image: linear-gradient(rgba(130, 122, 122, 0.4),rgba(145, 136, 136, 0.4)); */
     width: 750px;
     height: 423px;
@@ -244,7 +250,7 @@ body {
     .plant-card-container {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        column-gap: 10px;
+        column-gap: 5px;
         width: auto;
         margin-left: 10px;
     }
@@ -269,8 +275,59 @@ body {
         display: none;
     }
 
+    .flower-store {
+        width: 100%;
+    }
+
     .badge {
         display: none;
+    }
+
+    /* responsive latest deals section */
+    .latest-deals-container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 20px;
+    }
+
+    .zabo, .ana, .bloom {
+        width: 360px;
+        height: 180px;
+    }
+
+    .bloom p, 
+    .ana p,
+    .zabo p {
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+
+    .bloom h2, 
+    .ana h2,
+    .zabo h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .zabo {
+        background-size: cover;
+        /* padding-right:20px;
+        padding-top: 60px; */
+        order: 1;
+        position: relative;
+    }
+
+    .zabo h2 {
+        position: absolute;
+        top: 60px;
+        left: 95px;
+    }
+
+    .zabo p {
+        position: absolute;
+        top: 110px;
+        left: 160px;
     }
 
 }
