@@ -219,6 +219,50 @@ body {
     text-decoration: underline;
 }
 
+/* join section related styles */
+.join-section {
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    min-width: 500px;
+    height: 533px;
+    /* position: relative; */
+    text-align: center;
+}
+
+.join-section h2 {
+    color: #F5F7FE;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    /* left: 90px; */
+    top: 150px;
+}
+
+input{
+    position: relative;
+    top: 150px;
+    width: 644px;
+    height: 50px;
+    border: none;
+}
+
+button{
+    position: relative;
+    top: 155px;
+    right: 4px;
+    width: 186px;
+    height: 53px;
+    padding: 20px 50px;
+    border: none;
+    background-color: #E95A08;
+    color: #F5F7FE;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
 /* responsive designs */
 
 @media screen and (max-width: 576px){
@@ -328,6 +372,11 @@ body {
         position: absolute;
         top: 110px;
         left: 160px;
+    }
+
+    /* responsive joints section */
+    input {
+        width:218px;
     }
 
 }
